@@ -17,18 +17,21 @@
 <body>
 
      <div id="contenedorPedirDatos" class="d-flex">
-          <div class="divPedirDatos m-5">
+          <div id="IdDivPedirDatos" class="divPedirDatos m-5">
                <h2>Identificate</h2>
                
-               <form id="pedirDatos">
-               <label class="datos form-label" id="datos"></label>
-               <input type="text" class="form-control m-3">
-          <div class="boton m-3">
+          <form id="pedirDatos">
+               <label class="datos form-label"></label>
+               <input type="text" class="form-control m-3" id="datos">
+               <div class="boton m-3">
                <button type="submit" class="btn btn-primary" id="bIngresar">Ingresar</button>
           </form>
           </div>
      </div>
+     </div>
 
+     <div id="divProductos" class="display-flex"></div>
+</body>
 <footer>
 
  <!-- ============ BOOTSTRAP JAVASCRIPT ============-->

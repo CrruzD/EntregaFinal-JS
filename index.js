@@ -1,9 +1,11 @@
 /* VARIABLES IDENTIFICACION */
 
+
 let contenedorPedirDatos;
 let fPedirDatos;
 let iDatos;
 let bIngresar;
+let IdDivPedirDatos;
 
 /* VARIABLES AL DOM */
 
@@ -12,26 +14,92 @@ function incializarElementos (){
      fPedirDatos = document.getElementById("pedirDatos")
      iDatos = document.getElementById("datos")
      bIngresar = document.getElementById("bIngresar")
+     IdDivPedirDatos = document.getElementById("IdDivPedirDatos")
 }
 
 /* EVENTOS */
 
-function inicializarEventos() {
-     contenedorPedirDatos.onsubmit = (e) => contenedorPedirDatos(e);
+// function inicializarEventos() {
+//      contenedorPedirDatos.onsubmit = (e) => contenedorPedirDatos(e);
+// }
+
+function validarIdentificacion() {
+     
+     // contenedorPedirDatosV = contenedorPedirDatos.value;
+     // fPedirDatosV = fPedirDatos.value;
+     // iDatos = iDatos.value;
+     // bIngresarV = bIngresar.value;
+     // console.log(iDatos.value)
+     
 }
 
-function validarIdentificacion(e) {
-     e.preventDefault();
-     let contenedorPedirDatos = contenedorPedirDatos.value;
-     let fPedirDatos = fPedirDatos.value;
-     let iDatos = iDatos.value;
-     let bIngresar = bIngresar.value;
+function asignarClaseDFlexNone(input){
+     if(input !== ""){
+          IdDivPedirDatos.className = "display-flex"
+          crearLabel()
+          mostrarLista()
+     }
+     else{
+          alert("No ingresó un nombre")
+     }
 }
+
+function crearLabel(){
+     contenedorPedirDatos.innerHTML = `<h4 class="m-5">Hola ${iDatos.value}</4>`
+} 
+
+function mostrarLista(){
+
+     let eliminarClase = document.getElementById("divProductos")
+     eliminarClase.classList.remove("display-flex")
+}
+
+
+
+
+function agregar(){
+
+     const productosId = ["Remeras", "Camisas", "Sweters", "Buzos", "Pantalones", "Bermudas"]
+ 
+     let divProductos = document.getElementById("divProductos")
+ 
+     for(const producto of productosId){
+         let li = document.createElement("li")
+         li.innerHTML = `<button id="producto">${producto}</button>`
+         divProductos.appendChild(li)
+     }
+ 
+ }
+ 
+ 
+
+
+function inicializarEventos() {
+     fPedirDatos.addEventListener("submit", e => {
+         e.preventDefault()
+         
+         validarIdentificacion()
+         asignarClaseDFlexNone(iDatos.value)
+
+         
+     })
+     fPedirDatos.reset()
+ }
+
+
+
+
+/* function presionarBoton (){
+     contenedorPedirDatos.onclick =
+} */
+
 
 function main() {     
      incializarElementos();
      inicializarEventos();
-     validarIdentificacion();
+     agregar()
+     
+     
 }
 
 main();
