@@ -1,6 +1,5 @@
 /* VARIABLES IDENTIFICACION */
 
-
 let contenedorPedirDatos;
 let fPedirDatos;
 let iDatos;
@@ -45,7 +44,7 @@ function asignarClaseDFlexNone(input){
 }
 
 function crearLabel(){
-     contenedorPedirDatos.innerHTML = `<h4 class="m-5">Hola ${iDatos.value}</4>`
+     contenedorPedirDatos.innerHTML = `<h4 class="m-3 tamañoFuente ">Hola <b> ${iDatos.value}</b>, que desea llevar? </4>`
 } 
 
 function mostrarLista(){
@@ -65,7 +64,7 @@ function agregar(){
  
      for(const producto of productosId){
          let li = document.createElement("li")
-         li.innerHTML = `<button id="producto">${producto}</button>`
+         li.innerHTML = `<button class="tamañoFuente display-flex botones" id="producto">${producto}</button>`
          divProductos.appendChild(li)
      }
  

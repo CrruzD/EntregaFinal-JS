@@ -1,3 +1,61 @@
-.display-flex{
+/************** Setear los valores por default **************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family:'DM Sans', sans-serif;
+    background-color: var(--color-fondo);
+}
+
+/************** Setear los valores por default **************/
+
+
+/************** Variables **************/
+
+:root {
+    --color-fondo: #ffd99b;
+    --color-navbar: #ffd899;
+    --familytext: 
+}
+
+
+ .display-flex{
     display: none;
+}
+
+.tamañoFuente{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+}
+.botones{
+    text-decoration: none;
+    height: 5rem;
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+    margin: 1rem;
+    border-radius: 15px;
+    background-color: var(--color-fondo);
+}
+
+.centrarBotones{
+    display: flex;
+    justify-content: center;
+    list-style:none;
+}
+
+
+.navbar{
+    height:5rem;
+    font-size: 3rem;
+
+}
+.container-fluid{
+    height:5rem;
+    background-color: var(--color-navbar);
+
+
 }

@@ -16,21 +16,33 @@
 </head>
 <body>
 
-     <div id="contenedorPedirDatos" class="d-flex">
-          <div id="IdDivPedirDatos" class="divPedirDatos m-5">
-               <h2>Identificate</h2>
+     <nav class="navbar navbar-light bg-light mt-5 mb-2">
+          <div class="container-fluid">
+            <a class="navbar-brand">Nombre de la Marca</a>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-warning" type="submit">Buscar</button>
+            </form>
+          </div>
+     </nav>
+
+     <div id="contenedorPedirDatos" class="d-flex ">
+          <div id="IdDivPedirDatos" class="divPedirDatos m-5 ">
+               <h2 class="tamañoFuente">Identificate</h2>
                
-          <form id="pedirDatos">
+          <form id="pedirDatos" class="tamañoFuente">
                <label class="datos form-label"></label>
                <input type="text" class="form-control m-3" id="datos">
                <div class="boton m-3">
-               <button type="submit" class="btn btn-primary" id="bIngresar">Ingresar</button>
+               <button type="submit" class="btn btn-dark " id="bIngresar">
+               <h2>Ingresar</h2>     
+               </button>
           </form>
           </div>
      </div>
      </div>
 
-     <div id="divProductos" class="display-flex"></div>
+     <div id="divProductos" class="display-flex centrarBotones"></div>
 </body>
 <footer>
 
