@@ -14,25 +14,27 @@
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
 </head>
-<body>
+<div>
 
-     <nav class="navbar navbar-light bg-light mt-5 mb-2">
+<!--      <nav class="navbar navbar-light bg-light mt-5 mb-2">
           <div class="container-fluid">
             <a class="navbar-brand">Nombre de la Marca</a>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-warning" type="submit">Buscar</button>
-            </form>
           </div>
-     </nav>
+     </nav> -->
 
-     <div id="contenedorPedirDatos" class="d-flex ">
-          <div id="IdDivPedirDatos" class="divPedirDatos m-5 ">
-               <h2 class="tamañoFuente">Identificate</h2>
+
+     <div class="contenedorHermanos">
+
+     <div id="contenedorPedirDatos" class="">
+
+          <div id="IdDivPedirDatos" class="divPedirDatos">
+               <h2 class="tamanioFuente">¿Como es su nombre?</h2>
+          </div>     
+
                
-          <form id="pedirDatos" class="tamañoFuente">
+          <form id="pedirDatos" class="tamanioFuente">
                <label class="datos form-label"></label>
-               <input type="text" class="form-control m-3" id="datos">
+               <input type="text" class="form-control" id="datos">
                <div class="boton m-3">
                <button type="submit" class="btn btn-dark " id="bIngresar">
                <h2>Ingresar</h2>     
@@ -40,9 +42,200 @@
           </form>
           </div>
      </div>
+
+     <div id="contenedorCarrito" class="tamanioFuente" placeholder>
+      <h3>Identificate, y añade productos al carrito</h3>
+    </div>
+     
+     </div>
+     <hr>
+
+     <div id="divProductos" class="display-flex">
+          <div class="centrarBotones" id="divCentrados">
+
+          </div>
      </div>
 
-     <div id="divProductos" class="display-flex centrarBotones"></div>
+     <div class="contenedorCards">
+     <div class="display-flex" id="contenedorRemeras">
+      <div class="row abueloCards">
+           <div class="g-4 padreCards">
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/remeras/remera-azul.jpg" class="card-img-top" alt="Remera 1">
+                    <div class="card-body">
+                      <h5 class="card-title">Remera Azul cuello redondo</h5>
+                      <p class="card-text">Una remera que va con vos</p>
+                      <h6>$ 9900</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="btn btn-primary btnComprar" id="btnComprar1">Añadir al carrito</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/remeras/img-remera.jpg" class="card-img-top" alt="Remera 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Remera blanca cuello redondo</h5>
+                      <p class="card-text">Una remera que va con vos</p>
+                      <h6>$ 6300</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                      <button class="btn btn-primary btnComprar" id="btnComprar2">Añadir al carrito</button>
+                  </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/remeras/remera-azul.jpg" class="card-img-top" alt="Remera 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Remera azul escote en "V"</h5>
+                      <p class="card-text">Una remera que va con vos</p>
+                      <h6>$ 9800</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="btn btn-primary btnComprar" id="btnComprar3">Añadir al carrito</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/remeras/img-remera.jpg" class="card-img-top" alt="Remera 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Remera blanca escote en "V"</h5>
+                      <p class="card-text">Una remera que va con vos</p>
+                      <h6>$ 8800</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="btn-primary btnComprar btn" id="btnComprar4">Añadir al carrito</button>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+    </div>
+
+    <div class=" display-flex" id="contenedorCamisas">
+                  <div class="row abueloCards">
+                       <div class="g-4 padreCards">
+                            <div class="col">
+                              <div class="card">
+                                <img src="./img/camisas/celeste" class="card-img-top" alt="Remera 1">
+                                <div class="card-body" id="1">
+                                  <h5 class="card-title">Camisa celeste</h5>
+                                  <p class="card-text">Una camisa que va con vos</p>
+                                  <h6>$ 15500</h6>
+                                </div>
+                                <div class="contenedor-boton">
+                                    <button class="btn btn-primary btnComprar" id="btnComprar5">Añadir al carrito</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="./img/camisas/blanca" class="card-img-top" alt="Remera 2">
+                                <div class="card-body">
+                                  <h5 class="card-title">Camisa blanca</h5>
+                                  <p class="card-text">Una camisa que va con vos</p>
+                                  <h6>$ 16300</h6>
+                                </div>
+                                <div class="contenedor-boton">
+                                  <button class="btn btn-primary btnComprar" id="btnComprar6">Añadir al carrito</button>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="./img/camisas/roja.webp" class="card-img-top" alt="Camisa 3">
+                                <div class="card-body">
+                                  <h5 class="card-title">Camisa roja</h5>
+                                  <p class="card-text">Una camisa que va con vos</p>
+                                  <h6>$ 19800</h6>
+                                </div>
+                                <div class="contenedor-boton">
+                                    <button class="btn btn-primary btnComprar" id="btnComprar7">Añadir al carrito</button>
+                                </div>
+                                </div>
+                              </div>
+                            <div class="col">
+                              <div class="card">
+                                <img src="./img/camisas/verde" class="card-img-top" alt="Camisa 4">
+                                <div class="card-body">
+                                  <h5 class="card-title">Camisa verde</h5>
+                                  <p class="card-text">Una camisa que va con vos</p>
+                                  <h6>$ 14000</h6>
+                                </div>
+                                <div class="contenedor-boton">
+                                    <button class="btn btn-primary btnComprar" id="btnComprar8">Añadir al carrito</button>
+                                </div>
+                                </div>
+                              </div>
+                              </div>
+                              </div>
+    </div>
+
+    <div class=" display-flex" id="contenedorPantalones">
+      <div class="row abueloCards">
+           <div class="g-4 padreCards">
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/pantalones/jean.jpg" class="card-img-top" alt="Pantalon 1">
+                    <div class="card-body">
+                      <h5 class="card-title h5" id="">Jean 1</h5>
+                      <p class="card-text">Un pantalon que va con vos</p>
+                      <h6>$ 15500</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="btn btn-primary btnComprar" id="btnComprar9">Añadir al carrito</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/pantalones/jean2.jpg" class="card-img-top" alt="Pantalon 2">
+                    <div class="card-body">
+                      <h5 class="card-title">Jean 2</h5>
+                      <p class="card-text">Un pantalon que va con vos</p>
+                      <h6>$ 16300</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                      <button class="btn btn-primary btnComprar" id="btnComprar10">Añadir al carrito</button>
+                  </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/pantalones/jean.jpg" class="card-img-top" alt="Pantalon 3">
+                    <div class="card-body">
+                      <h5 class="card-title">Jean 3</h5>
+                      <p class="card-text">Un pantalon que va con vos</p>
+                      <h6>$ 19800</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="btn btn-primary btnComprar" id="btnComprar11">Añadir al carrito</button>
+                    </div>
+                    </div>
+                  </div>
+                <div class="col">
+                  <div class="card">
+                    <img src="./img/pantalones/jean2.jpg" class="card-img-top" alt="Pantalon 4">
+                    <div class="card-body">
+                      <h5 class="card-title">Jean 4</h5>
+                      <p class="card-text">Un pantalon que va con vos</p>
+                      <h6>$ 14000</h6>
+                    </div>
+                    <div class="contenedor-boton">
+                        <button class="btn btn-primary btnComprar" id="btnComprar12">Añadir al carrito</button>
+                    </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+    </div>
+     </div>
+     
+
 </body>
 <footer>
 

@@ -4,11 +4,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 html {
     font-size: 62.5%;
     font-family:'DM Sans', sans-serif;
-    background-color: var(--color-fondo);
 }
 
 /************** Setear los valores por default **************/
@@ -22,23 +22,72 @@ html {
     --familytext: 
 }
 
+body{
+    background-color: var(--color-fondo);
+    height: 100%;
+    width: auto;
+    
+}
 
+header {
+    position: relative;
+    display: flex;
+}
  .display-flex{
     display: none;
 }
 
-.tamañoFuente{
+.contenedorHermanos{
+    display: flex;
+    justify-content: space-around;
+}
+
+ #contenedorPedirDatos{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 50px;
+    margin: 100px;
+    min-width: 320px;
+    height: 190px;
+    text-align: center;
+    background-color: var(--color-navbar);
+ }
+#contenedorCarrito{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 50rem;
+    margin: 100px;
+    min-width: 320px;
+    height: auto;
+    text-align: center;
+    background-color: var(--color-navbar);
+}
+
+
+.tamanioFuente{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.tamanioFuentePrecio{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
 }
 .botones{
-    text-decoration: none;
-    height: 5rem;
-    font-size: 2rem;
+    height: auto;
+    width: auto;
+    font-size: 2.5rem;
     font-family:'Times New Roman', Times, serif;
     margin: 1rem;
     border-radius: 15px;
-    background-color: var(--color-fondo);
 }
 
 .centrarBotones{
@@ -49,13 +98,61 @@ html {
 
 
 .navbar{
+    position: relative;
     height:5rem;
     font-size: 3rem;
+    
 
 }
 .container-fluid{
     height:5rem;
     background-color: var(--color-navbar);
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.abueloCards{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;    
+  
+}
+.padreCards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+
+}
+
+.contenedorCards{ 
+     background-size: 5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: cover; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+
+/* AGRANDAR LOS BOTONES */
+
+
+/* .contenedor-boton{
+    display: grid;
+    justify-content: center;
 
 
 }
+
+.btn{
+    width: 100%;
+    height: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25rem;
+}
+ */
